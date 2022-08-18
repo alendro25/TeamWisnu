@@ -179,6 +179,7 @@ footer {
 
   .about .container img {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .project .container .card {
