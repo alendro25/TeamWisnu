@@ -9,6 +9,7 @@ body {
   /* font-family: 'Prata', serif; */
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .modal-backdrop {
@@ -207,7 +208,7 @@ footer {
   position: fixed;
   right: 35px;
   bottom: 70px;
-  color: black;
+  color: rgb(109, 105, 105);
   font-size: 25px;
   transition: all 0.4s;
   opacity: 0;
