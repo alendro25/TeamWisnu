@@ -77,10 +77,13 @@ body {
   font-family: "Prata", serif;
   margin-top: 100px;
 }
+.jumbotron .container p {
+  font-size: 16px;
+}
 
 .about {
   margin: 70px 0;
-  padding: 60px;
+  padding: 70px;
 }
 
 .about .container h1 {
@@ -92,7 +95,7 @@ body {
 
 .project {
   margin: 70px 0;
-  padding: 60px;
+  padding: 70px;
   background-color: rgb(245, 241, 241);
   width: 95vw;
   margin: auto;
@@ -110,7 +113,7 @@ body {
 
 .contact {
   margin-top: 90px;
-  padding: 60px;
+  padding: 70px;
 }
 
 .contact .container h4 {
@@ -226,7 +229,7 @@ footer {
     margin-top: 60;
   }
   .jumbotron .container p {
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
   .contact .container a {
