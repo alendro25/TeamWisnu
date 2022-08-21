@@ -267,11 +267,18 @@ footer {
     height: 200px;
   }
 
+  footer {
+    padding: 10px;
+  }
   .footer .container {
     display: block;
   }
   .footer .container .foot-brand img {
     width: 100px;
     height: 100px;
+  }
+
+  .footer .container ul > * {
+    margin-left: -30px;
   }
 }
