@@ -51,20 +51,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
+                        <a class="nav-link" href="#project">PROJECT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Login
+                        LOGIN
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -79,7 +79,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
+                                    <div class="alert alert-warning" role="alert">
+                                        Email/password salah.
+                                    </div>
+                                    <form action="/adminIndex.html" method="post">
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="email"
@@ -95,7 +98,7 @@
                                             <input type="checkbox" class="form-check-input" id="rememberMe">
                                             <label class="form-check-label" for="rememberMe">Remember me</label>
                                         </div>
-                                        <button type="login" class="btn btn-primary">Login</button>
+                                        <button type="login" class="btn btn-danger">Login</button>
                                     </form>
                                 </div>
                             </div>
@@ -199,7 +202,7 @@
                     <p>Use this space to encourage visitors to get in touch with<br>your team for questions, bookings,
                         feedback, or just to<br>say hi.</p>
                     <a href="https://api.whatsapp.com/send?phone=+6281333337329&text=Halo, Ada yang ingin Saya tanyakan. Mohon bantuannya"
-                        class="btn btn-black">Contact</a>
+                        class="btn btn-black">CONTACT</a>
                 </div>
 
                 <div class="col-lg-5 col-sm-12">
@@ -258,7 +261,8 @@
             </div>
         </div>
         <hr>
-        <p class="text-center text-light">&copy;2022 CV. Team Wisnu. All Right Reserved</p>
+        <p class="text-center text-light">&copy;2022 <a href="#" class="link-copyright"> CV. Team Wisnu</a>. All Right
+            Reserved</p>
     </footer>
     <!-- Akhir Footer -->
 

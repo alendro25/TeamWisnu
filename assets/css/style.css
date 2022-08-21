@@ -41,6 +41,14 @@ body {
 .link-fb:hover {
   color: rgb(50, 50, 243) !important;
 }
+.link-copyright {
+  text-decoration: none;
+  color: white;
+}
+.link-copyright:hover {
+  text-decoration: underline;
+  color: rgb(141, 137, 137);
+}
 
 .jumbotron {
   position: relative;
