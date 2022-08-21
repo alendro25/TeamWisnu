@@ -5,11 +5,40 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: 'Prata', serif; */
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .modal-backdrop {
   z-index: 0;
+}
+
+.btn-black {
+  background-color: #353535;
+  color: white;
+  font-size: 14px;
+  border-radius: 0%;
+}
+.btn-black:hover {
+  background-color: #565656;
+  color: white;
+}
+
+.btn-success,
+.btn-primary {
+  border-radius: 0%;
+}
+
+.link-mail:hover {
+  color: wheat !important;
+}
+.link-tel:hover {
+  color: greenyellow !important;
+}
+.link-fb:hover {
+  color: rgb(50, 50, 243) !important;
 }
 
 .jumbotron {
@@ -44,20 +73,26 @@ body {
   text-shadow: 2px 2px black;
 }
 
+.jumbotron .container h1 {
+  font-family: "Prata", serif;
+  margin-top: 100px;
+}
+
 .about {
   margin: 70px 0;
-  padding: 50px;
+  padding: 60px;
 }
 
 .about .container h1 {
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-family: "Prata", serif;
 }
 
 .project {
   margin: 70px 0;
-  padding: 50px;
+  padding: 60px;
   background-color: rgb(245, 241, 241);
   width: 95vw;
   margin: auto;
@@ -67,44 +102,52 @@ body {
 .project h1 {
   font-weight: bold;
   margin-bottom: 30px;
+  font-family: "Prata", serif;
 }
 .project p {
   margin-bottom: 50px;
 }
 
+.contact {
+  margin-top: 90px;
+  padding: 60px;
+}
+
+.contact .container h4 {
+  font-family: "Prata", serif;
+  font-size: 40px;
+}
+.contact .container p {
+  margin-top: 32px;
+  font-size: 16px;
+}
+.contact .container a {
+  text-decoration: none;
+  font-size: 16px;
+  width: 20%;
+}
+
+.contact .container .sitemap {
+  width: 400px;
+  height: 300px;
+}
+
 footer {
   margin-top: 70px;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px 10px 0 0;
 }
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
 }
 
-.footer .container a .bi {
+.footer .container a {
   color: white;
   font-size: 20px;
   margin-right: 5px;
-}
-
-.footer .container a .bi-facebook:hover {
-  color: rgb(50, 50, 243);
-  transition: 0.3s;
-}
-.footer .container a .bi-instagram:hover {
-  color: rgb(140, 56, 168);
-  transition: 0.3s;
-}
-.footer .container a .bi-twitter:hover {
-  color: rgb(0, 195, 255);
-  transition: 0.3s;
-}
-.footer .container a .bi-linkedin:hover {
-  color: rgb(37, 102, 199);
-  transition: 0.3s;
 }
 
 .footer .container ul {
@@ -112,13 +155,17 @@ footer {
 }
 .footer .container h4 {
   font-weight: 500;
+  color: white;
+}
+.footer .container p {
+  color: white;
 }
 .footer .container a {
   color: white;
   text-decoration: none;
 }
 .footer .container a:hover {
-  color: blue;
+  color: rgb(141, 137, 137);
 }
 
 /* CSS FLOATING WA */
@@ -154,6 +201,14 @@ footer {
   opacity: 0;
   z-index: 9999;
 }
+.scrollTop::after {
+  content: "to Top";
+  font-size: 13px;
+  position: fixed;
+  font-weight: bold;
+  bottom: 125px;
+  right: 25px;
+}
 .scrollTop.active {
   opacity: 1;
   pointer-events: auto;
@@ -186,7 +241,9 @@ footer {
     margin-bottom: 30px;
   }
 
-  .project .container .card {
+  .contact .container .sitemap {
+    width: 300px;
+    height: 200px;
   }
 
   .footer .container {
