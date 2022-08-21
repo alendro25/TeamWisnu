@@ -27,7 +27,8 @@ body {
 }
 
 .btn-success,
-.btn-primary {
+.btn-primary,
+.btn-danger {
   border-radius: 0%;
 }
 
