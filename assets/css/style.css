@@ -237,6 +237,16 @@ footer {
 /* Akhir Scroll to Top */
 
 /*--- Media Query ---*/
+@media only screen and (max-width: 1023px) {
+  .jumbotron .container h1 {
+    margin-top: 30px;
+  }
+
+  .project h1 {
+    margin-bottom: 10px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /*Tablet View*/
   .jumbotron .container * {
@@ -250,8 +260,11 @@ footer {
   }
 
   .contact .container a {
-    width: 30%;
+    width: 40%;
     margin-bottom: 30px;
+  }
+  .contact .container iframe {
+    width: 100% !important;
   }
 
   .about .container img {
@@ -279,6 +292,9 @@ footer {
 
   .project {
     padding: 80px 0 65px;
+  }
+  .project h1 {
+    margin-bottom: 10px;
   }
 
   .contact {
