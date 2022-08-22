@@ -102,6 +102,9 @@ body {
   margin-bottom: 50px;
   font-family: "Prata", serif;
 }
+.about .container p {
+  text-align: justify;
+}
 
 .project {
   margin: 70px 0;
@@ -129,6 +132,7 @@ body {
 .contact .container h4 {
   font-family: "Prata", serif;
   font-size: 40px;
+  font-weight: bold;
 }
 .contact .container p {
   margin-top: 32px;
@@ -138,11 +142,14 @@ body {
   text-decoration: none;
   font-size: 16px;
   width: 20%;
+  padding: 13px;
 }
 
 .contact .container .sitemap {
   width: 400px;
   height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px #807979;
 }
 
 footer {
@@ -282,8 +289,12 @@ footer {
     margin-bottom: 30px;
   }
 
+  .contact .container .h4-sitemap {
+    margin-top: 30px;
+  }
   .contact .container .sitemap {
-    width: 350px;
+    margin-top: 10px;
+    width: 360px;
     height: 200px;
   }
 
@@ -296,6 +307,7 @@ footer {
   .footer .container .foot-brand img {
     width: 100px;
     height: 100px;
+    margin: 10px 0;
   }
   .footer .container ul > * {
     margin-left: -30px;
