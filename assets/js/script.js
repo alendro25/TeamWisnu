@@ -9,6 +9,7 @@ $(".owl-carousel").owlCarousel({
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
   responsiveClass: true,
+  autoHeight: true,
   responsive: {
     0: {
       items: 1,
