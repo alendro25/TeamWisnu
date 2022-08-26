@@ -1,0 +1,11 @@
+.bi {
+  font-size: 30px;
+}
+
+.card-custom {
+  transition: all 0.5s;
+}
+
+.card-custom:hover {
+  transform: scale(1.05);
+}
