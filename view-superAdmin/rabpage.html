@@ -206,6 +206,66 @@
                         <h1 class="h3 mb-0 text-gray-800">RAB - Rancang Anggaran Biaya</h1>
                     </div>
 
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-md-5">
+                            <label for="client">Pilih Client:</label>
+                            <select class="form-control" id="client">
+                                <option value="rudi salim">Rudi Salim</option>
+                                <option value="bagong">Bagong</option>
+                                <option value="lita">Lita</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Tambah -->
+                    <div class="row">
+                        <div class="col">
+                            <!-- Tambah Button trigger modal -->
+                            <button type="button" class="btn btn-primary mb-3" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Tambah
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Tambah Pembayaran RAB
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="tambahRABTanggal">Tanggal Bayar</label>
+                                                    <input type="date" class="form-control" id="tambahRABTanggal"
+                                                        aria-describedby="tambahRABTanggal" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tambahRABNominal">Nominal</label>
+                                                    <input type="text" class="form-control" id="tambahRABNominal"
+                                                        aria-describedby="tambahRABNominal" autofocus required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tambahRABKeterangan">Keterangan Tambahan</label>
+                                                    <textarea class="form-control" name="tambahRABKeterangan"
+                                                        id="tambahRABKeterangan" aria-describedby="tambahRABKeterangan"
+                                                        cols="40" rows="5">
+                                                        </textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Tambah</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-xl-5">
                             <!-- Rincian RAB Card -->
@@ -298,70 +358,6 @@
                         </div>
 
                         <div class="col-xl-7">
-                            <div class="container mb-3">
-                                <div class="row mb-3">
-                                    <label for="client">Pilih Client:</label>
-                                    <select class="form-control" id="client">
-                                        <option value="rudi salim">Rudi Salim</option>
-                                        <option value="bagong">Bagong</option>
-                                        <option value="lita">Lita</option>
-                                    </select>
-                                </div>
-
-                                <div class="row">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                        Tambah
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Tambah Pembayaran RAB
-                                                    </h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="form-group">
-                                                            <label for="tambahRABTanggal">Tanggal Bayar</label>
-                                                            <input type="date" class="form-control"
-                                                                id="tambahRABTanggal"
-                                                                aria-describedby="tambahRABTanggal" autofocus>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="tambahRABNominal">Nominal</label>
-                                                            <input type="text" class="form-control"
-                                                                id="tambahRABNominal"
-                                                                aria-describedby="tambahRABNominal">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="tambahRABKeterangan">Keterangan Tambahan</label>
-                                                            <textarea class="form-control" name="tambahRABKeterangan"
-                                                                id="tambahRABKeterangan"
-                                                                aria-describedby="tambahRABKeterangan" cols="40"
-                                                                rows="5">
-                                                                </textarea>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-primary">Tambah</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <!-- RAB Tabel -->
                             <div class="card shadow mb-4">
                                 <div class="card-body">
