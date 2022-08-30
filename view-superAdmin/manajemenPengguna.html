@@ -67,7 +67,7 @@
             <!-- Nav Item - Proyek -->
             <li class="nav-item">
                 <a class="nav-link" href="proyekpage.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="bi bi-list-task"></i>
                     <span>Proyek</span></a>
             </li>
 
@@ -82,7 +82,7 @@
             <!-- Nav Item - RAB -->
             <li class="nav-item">
                 <a class="nav-link" href="rabpage.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="bi bi-credit-card-2-back"></i>
                     <span>RAB - Rancang Anggaran Belanja</span></a>
             </li>
 
@@ -97,7 +97,7 @@
             <!-- Nav Item - Akun -->
             <li class="nav-item">
                 <a class="nav-link" href="manajemenPengguna.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="bi bi-person-square"></i>
                     <span>Manajemen Pengguna</span></a>
             </li>
 
@@ -280,206 +280,185 @@
                         <!-- Card Content - Collapse -->
                         <div class="collapse show" id="daftarPengawasCard">
                             <div class="card-body">
-                                <div class="row">
-                                    <!-- Daftar Pengawas Tabel -->
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered" id="dataTable" width="100%"
-                                                cellspacing="0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No.</th>
-                                                        <th>Username</th>
-                                                        <th>Password</th>
-                                                        <th>Email</th>
-                                                        <th>Telepon</th>
-                                                        <th>Role</th>
-                                                        <th>Aksi</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Sudar1234</td>
-                                                        <td>12345678</td>
-                                                        <td>sudar@gmail.com</td>
-                                                        <td>087654321</td>
-                                                        <td>Admin</td>
-                                                        <td>
-                                                            <!-- Edit Button trigger modal -->
-                                                            <button type="button" class="btn btn-warning"
-                                                                data-toggle="modal" data-target="#editAkunAdminModal">
-                                                                Edit
-                                                            </button>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Username</th>
+                                                <th>Password</th>
+                                                <th>Email</th>
+                                                <th>Telepon</th>
+                                                <th>Role</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Sudar1234</td>
+                                                <td>12345678</td>
+                                                <td>sudar@gmail.com</td>
+                                                <td>087654321</td>
+                                                <td>Admin</td>
+                                                <td>
+                                                    <!-- Edit Button trigger modal -->
+                                                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                                                        data-target="#editAkunAdminModal">
+                                                        Edit
+                                                    </button>
 
-                                                            <!-- Modal -->
-                                                            <div class="modal fade" id="editAkunAdminModal"
-                                                                tabindex="-1" aria-labelledby="editAkunAdminModalLabel"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title"
-                                                                                id="editAkunAdminModalLabel">Edit Akun
-                                                                                Admin
-                                                                            </h5>
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="editAkunAdminModal" tabindex="-1"
+                                                        aria-labelledby="editAkunAdminModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="editAkunAdminModalLabel">Edit Akun
+                                                                        Admin
+                                                                    </h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                for="tambahAkunUsername">Username</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="tambahAkunUsername"
+                                                                                aria-describedby="tambahAkunUsername"
+                                                                                autofocus required>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            <form>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunUsername">Username</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunUsername"
-                                                                                        aria-describedby="tambahAkunUsername"
-                                                                                        autofocus required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunPassword">Password</label>
-                                                                                    <input type="password"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunPassword"
-                                                                                        aria-describedby="tambahAkunPassword"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunEmail">Email</label>
-                                                                                    <input type="email"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunEmail"
-                                                                                        aria-describedby="tambahAkunEmail"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="tambahAkunTel">No.
-                                                                                        Telepon</label>
-                                                                                    <input type="tel"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunTel"
-                                                                                        aria-describedby="tambahAkunTel"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="pengawas">Role:</label>
-                                                                                    <select class="form-control"
-                                                                                        id="pengawas">
-                                                                                        <option value="admin">Admin
-                                                                                        </option>
-                                                                                        <option value="client">Client
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-primary">Tambah</button>
-                                                                            </form>
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                for="tambahAkunPassword">Password</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="tambahAkunPassword"
+                                                                                aria-describedby="tambahAkunPassword"
+                                                                                required>
                                                                         </div>
-                                                                    </div>
+                                                                        <div class="form-group">
+                                                                            <label for="tambahAkunEmail">Email</label>
+                                                                            <input type="email" class="form-control"
+                                                                                id="tambahAkunEmail"
+                                                                                aria-describedby="tambahAkunEmail"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="tambahAkunTel">No.
+                                                                                Telepon</label>
+                                                                            <input type="tel" class="form-control"
+                                                                                id="tambahAkunTel"
+                                                                                aria-describedby="tambahAkunTel"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="pengawas">Role:</label>
+                                                                            <select class="form-control" id="pengawas">
+                                                                                <option value="admin">Admin
+                                                                                </option>
+                                                                                <option value="client">Client
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Tambah</button>
+                                                                    </form>
                                                                 </div>
                                                             </div>
-                                                            <a href="" class="btn btn-danger">Hapus</a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Pak Sale</td>
-                                                        <td>87654321</td>
-                                                        <td>sale@gmail.com</td>
-                                                        <td>031123456</td>
-                                                        <td>Admin</td>
-                                                        <td>
-                                                            <!-- Edit Button trigger modal -->
-                                                            <button type="button" class="btn btn-warning"
-                                                                data-toggle="modal" data-target="#editAkunAdminModal">
-                                                                Edit
-                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn btn-danger">Hapus</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Pak Sale</td>
+                                                <td>87654321</td>
+                                                <td>sale@gmail.com</td>
+                                                <td>031123456</td>
+                                                <td>Admin</td>
+                                                <td>
+                                                    <!-- Edit Button trigger modal -->
+                                                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                                                        data-target="#editAkunAdminModal">
+                                                        Edit
+                                                    </button>
 
-                                                            <!-- Modal -->
-                                                            <div class="modal fade" id="editAkunAdminModal"
-                                                                tabindex="-1" aria-labelledby="editAkunAdminModalLabel"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title"
-                                                                                id="editAkunAdminModalLabel">Edit Akun
-                                                                                Admin
-                                                                            </h5>
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="editAkunAdminModal" tabindex="-1"
+                                                        aria-labelledby="editAkunAdminModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="editAkunAdminModalLabel">Edit Akun
+                                                                        Admin
+                                                                    </h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                for="tambahAkunUsername">Username</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="tambahAkunUsername"
+                                                                                aria-describedby="tambahAkunUsername"
+                                                                                autofocus required>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            <form>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunUsername">Username</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunUsername"
-                                                                                        aria-describedby="tambahAkunUsername"
-                                                                                        autofocus required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunPassword">Password</label>
-                                                                                    <input type="password"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunPassword"
-                                                                                        aria-describedby="tambahAkunPassword"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunEmail">Email</label>
-                                                                                    <input type="email"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunEmail"
-                                                                                        aria-describedby="tambahAkunEmail"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="tambahAkunTel">No.
-                                                                                        Telepon</label>
-                                                                                    <input type="tel"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunTel"
-                                                                                        aria-describedby="tambahAkunTel"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="pengawas">Role:</label>
-                                                                                    <select class="form-control"
-                                                                                        id="pengawas">
-                                                                                        <option value="admin">Admin
-                                                                                        </option>
-                                                                                        <option value="client">Client
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-primary">Tambah</button>
-                                                                            </form>
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                for="tambahAkunPassword">Password</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="tambahAkunPassword"
+                                                                                aria-describedby="tambahAkunPassword"
+                                                                                required>
                                                                         </div>
-                                                                    </div>
+                                                                        <div class="form-group">
+                                                                            <label for="tambahAkunEmail">Email</label>
+                                                                            <input type="email" class="form-control"
+                                                                                id="tambahAkunEmail"
+                                                                                aria-describedby="tambahAkunEmail"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="tambahAkunTel">No.
+                                                                                Telepon</label>
+                                                                            <input type="tel" class="form-control"
+                                                                                id="tambahAkunTel"
+                                                                                aria-describedby="tambahAkunTel"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="pengawas">Role:</label>
+                                                                            <select class="form-control" id="pengawas">
+                                                                                <option value="admin">Admin
+                                                                                </option>
+                                                                                <option value="client">Client
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Tambah</button>
+                                                                    </form>
                                                                 </div>
                                                             </div>
-                                                            <a href="" class="btn btn-danger">Hapus</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div> <!-- Akhir ROW -->
-
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn btn-danger">Hapus</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -494,206 +473,195 @@
                         <!-- Card Content - Collapse -->
                         <div class="collapse show" id="daftarClientCard">
                             <div class="card-body">
-                                <div class="row">
-                                    <!-- Daftar Pengawas Tabel -->
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered" id="dataTable" width="100%"
-                                                cellspacing="0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No.</th>
-                                                        <th>Username</th>
-                                                        <th>Password</th>
-                                                        <th>Email</th>
-                                                        <th>Telepon</th>
-                                                        <th>Role</th>
-                                                        <th>Aksi</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Rudi Salim</td>
-                                                        <td>12345678</td>
-                                                        <td>rudi@gmail.com</td>
-                                                        <td>087654321</td>
-                                                        <td>Client</td>
-                                                        <td>
-                                                            <!-- Edit Button trigger modal -->
-                                                            <button type="button" class="btn btn-warning"
-                                                                data-toggle="modal" data-target="#editAkunClientModal">
-                                                                Edit
-                                                            </button>
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Username</th>
+                                                    <th>Password</th>
+                                                    <th>Email</th>
+                                                    <th>Telepon</th>
+                                                    <th>Role</th>
+                                                    <th>Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Rudi Salim</td>
+                                                    <td>12345678</td>
+                                                    <td>rudi@gmail.com</td>
+                                                    <td>087654321</td>
+                                                    <td>Client</td>
+                                                    <td>
+                                                        <!-- Edit Button trigger modal -->
+                                                        <button type="button" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#editAkunClientModal">
+                                                            Edit
+                                                        </button>
 
-                                                            <!-- Modal -->
-                                                            <div class="modal fade" id="editAkunClientModal"
-                                                                tabindex="-1" aria-labelledby="editAkunClientModalLabel"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title"
-                                                                                id="editAkunClientModalLabel">Edit Akun
-                                                                                Client
-                                                                            </h5>
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <form>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunUsername">Username</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunUsername"
-                                                                                        aria-describedby="tambahAkunUsername"
-                                                                                        autofocus required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunPassword">Password</label>
-                                                                                    <input type="password"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunPassword"
-                                                                                        aria-describedby="tambahAkunPassword"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunEmail">Email</label>
-                                                                                    <input type="email"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunEmail"
-                                                                                        aria-describedby="tambahAkunEmail"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="tambahAkunTel">No.
-                                                                                        Telepon</label>
-                                                                                    <input type="tel"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunTel"
-                                                                                        aria-describedby="tambahAkunTel"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="pengawas">Role:</label>
-                                                                                    <select class="form-control"
-                                                                                        id="pengawas">
-                                                                                        <option value="client">Client
-                                                                                        </option>
-                                                                                        <option value="admin">Admin
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-primary">Tambah</button>
-                                                                            </form>
-                                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="editAkunClientModal" tabindex="-1"
+                                                            aria-labelledby="editAkunClientModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title"
+                                                                            id="editAkunClientModalLabel">Edit Akun
+                                                                            Client
+                                                                        </h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunUsername">Username</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="tambahAkunUsername"
+                                                                                    aria-describedby="tambahAkunUsername"
+                                                                                    autofocus required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunPassword">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="tambahAkunPassword"
+                                                                                    aria-describedby="tambahAkunPassword"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunEmail">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="tambahAkunEmail"
+                                                                                    aria-describedby="tambahAkunEmail"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="tambahAkunTel">No.
+                                                                                    Telepon</label>
+                                                                                <input type="tel" class="form-control"
+                                                                                    id="tambahAkunTel"
+                                                                                    aria-describedby="tambahAkunTel"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="pengawas">Role:</label>
+                                                                                <select class="form-control"
+                                                                                    id="pengawas">
+                                                                                    <option value="client">Client
+                                                                                    </option>
+                                                                                    <option value="admin">Admin
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                class="btn btn-primary">Tambah</button>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <a href="" class="btn btn-danger">Hapus</a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Bagong</td>
-                                                        <td>87654321</td>
-                                                        <td>bagong@gmail.com</td>
-                                                        <td>031123456</td>
-                                                        <td>Client</td>
-                                                        <td>
-                                                            <!-- Edit Button trigger modal -->
-                                                            <button type="button" class="btn btn-warning"
-                                                                data-toggle="modal" data-target="#editAkunClientModal">
-                                                                Edit
-                                                            </button>
+                                                        </div>
+                                                        <a href="" class="btn btn-danger">Hapus</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Bagong</td>
+                                                    <td>87654321</td>
+                                                    <td>bagong@gmail.com</td>
+                                                    <td>031123456</td>
+                                                    <td>Client</td>
+                                                    <td>
+                                                        <!-- Edit Button trigger modal -->
+                                                        <button type="button" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#editAkunClientModal">
+                                                            Edit
+                                                        </button>
 
-                                                            <!-- Modal -->
-                                                            <div class="modal fade" id="editAkunClientModal"
-                                                                tabindex="-1" aria-labelledby="editAkunClientModalLabel"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title"
-                                                                                id="editAkunClientModalLabel">Edit Akun
-                                                                                Client
-                                                                            </h5>
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <form>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunUsername">Username</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunUsername"
-                                                                                        aria-describedby="tambahAkunUsername"
-                                                                                        autofocus required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunPassword">Password</label>
-                                                                                    <input type="password"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunPassword"
-                                                                                        aria-describedby="tambahAkunPassword"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="tambahAkunEmail">Email</label>
-                                                                                    <input type="email"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunEmail"
-                                                                                        aria-describedby="tambahAkunEmail"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="tambahAkunTel">No.
-                                                                                        Telepon</label>
-                                                                                    <input type="tel"
-                                                                                        class="form-control"
-                                                                                        id="tambahAkunTel"
-                                                                                        aria-describedby="tambahAkunTel"
-                                                                                        required>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label for="pengawas">Role:</label>
-                                                                                    <select class="form-control"
-                                                                                        id="pengawas">
-                                                                                        <option value="client">Client
-                                                                                        </option>
-                                                                                        <option value="admin">Admin
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <button type="submit"
-                                                                                    class="btn btn-primary">Tambah</button>
-                                                                            </form>
-                                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="editAkunClientModal" tabindex="-1"
+                                                            aria-labelledby="editAkunClientModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title"
+                                                                            id="editAkunClientModalLabel">Edit Akun
+                                                                            Client
+                                                                        </h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunUsername">Username</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="tambahAkunUsername"
+                                                                                    aria-describedby="tambahAkunUsername"
+                                                                                    autofocus required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunPassword">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="tambahAkunPassword"
+                                                                                    aria-describedby="tambahAkunPassword"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label
+                                                                                    for="tambahAkunEmail">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="tambahAkunEmail"
+                                                                                    aria-describedby="tambahAkunEmail"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="tambahAkunTel">No.
+                                                                                    Telepon</label>
+                                                                                <input type="tel" class="form-control"
+                                                                                    id="tambahAkunTel"
+                                                                                    aria-describedby="tambahAkunTel"
+                                                                                    required>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="pengawas">Role:</label>
+                                                                                <select class="form-control"
+                                                                                    id="pengawas">
+                                                                                    <option value="client">Client
+                                                                                    </option>
+                                                                                    <option value="admin">Admin
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                class="btn btn-primary">Tambah</button>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <a href="" class="btn btn-danger">Hapus</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                        </div>
+                                                        <a href="" class="btn btn-danger">Hapus</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </div> <!-- Akhir ROW -->
-
+                                </div>
                             </div>
                         </div>
                     </div>
