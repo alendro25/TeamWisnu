@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Team Wisnu - RAB</title>
+    <title>Team Wisnu - Detail Progress Proyek</title>
 
     <!-- Custom fonts for this template -->
-    <link href="assets/sb admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/sb admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -21,13 +21,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/sb admin/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../assets/css/sb admin/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    <link href="assets/sb admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../assets/sb admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- My SB Admin CSS -->
-    <link rel="stylesheet" href="assets/css/sb admin/my-sbAdmin.css">
+    <link rel="stylesheet" href="../assets/css/sb admin/my-sbAdmin.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="../assets/css/lightbox/lightbox.css">
+
 </head>
 
 <body id="page-top">
@@ -41,7 +45,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="clientIndex.html">
                 <div class="sidebar-brand-icon">
-                    <img src="assets/img/Logo.png" width="40" height="40" alt="">
+                    <img src="../assets/img/Logo.png" width="40" height="40" alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3">Team Wisnu</div>
             </a>
@@ -161,7 +165,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Wisnu</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -188,141 +192,84 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">RAB - Rancang Anggaran Biaya</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Detail Progress Proyek</h1>
                     </div>
 
                     <div class="row">
-                        <div class="col-xl-5">
-                            <!-- Rincian RAB Card -->
+                        <div class="col-xl-6">
+                            <!-- Detail Progress Card -->
                             <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="namaProgress">Nama Progress</label>
+                                            <input type="text" class="form-control" id="namaProgress"
+                                                aria-describedby="namaProgress" value="Pemasangan ubin ruang tamu"
+                                                readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tanggalProgress">Tanggal Progress</label>
+                                            <input type="date" class="form-control" id="tanggalProgress"
+                                                value="2022-03-12" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="biayaKeluar">Biaya Keluar</label>
+                                            <input type="text" class="form-control" id="biayaKeluar"
+                                                aria-describedby="biayaKeluar" value="5.000.000" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="presentaseKerja">Presentase Pekerjaan (%)</label>
+                                            <input type="text" class="form-control" id="presentaseKerja"
+                                                aria-describedby="presentaseKerja" value="50" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="keteranganProgress">Keterangan</label>
+                                            <textarea class="form-control" name="keteranganProgress"
+                                                id="keteranganProgress" cols="30" rows="5"
+                                                readonly>Ubin telah terpakai 5 kardus, tersisa 6 kardus</textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <!-- Foto Proyek Card -->
+                            <div class="card shadow mb-4 foto-card">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Rincian RAB</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Foto Proyek</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="row">
-                                        <!-- Total Anggaran Card -->
-                                        <div class="col-xl-12 col-md-12 mb-4">
-                                            <div class="card border-left-primary shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                Total Anggaran
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 40,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-wallet2"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Sudah Terbayar Card -->
-                                        <div class="col-xl-12 col-md-6 mb-4">
-                                            <div class="card border-left-success shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                                Sudah Terbayar
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 15,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-cash-coin"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Biaya Kekurangan Card -->
-                                        <div class="col-xl-12 col-md-6 mb-4">
-                                            <div class="card border-left-warning shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                                Biaya Kekurangan
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 25,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-currency-dollar"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="../assets/img/portofolio 1.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 1.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
+                                    <a href="../assets/img/portofolio 2.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 2.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
+                                    <a href="../assets/img/portofolio 4.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 4.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
+                                    <a href="../assets/img/portofolio 5.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 5.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
+                                    <a href="../assets/img/portofolio 6.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 6.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
+                                    <a href="../assets/img/portofolio 4.jpg" data-lightbox="roadtrip">
+                                        <img class="mb-3" src="../assets/img/portofolio 4.jpg" width="100" height="100"
+                                            alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-xl-7">
-                            <!-- RAB Tabel -->
-                            <div class="card shadow mb-4">
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>Tanggal Bayar</th>
-                                                    <th>Nominal</th>
-                                                    <th>Keterangan</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>5.000.000</td>
-                                                    <td>Bayar dana tukang</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>2022/04/25</td>
-                                                    <td>1.500.000</td>
-                                                    <td>Bayar dana pengelasan besi</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>2015/04/25</td>
-                                                    <td>8.000.000</td>
-                                                    <td>Pengecatan Dinding Kamar Tidur</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -372,21 +319,24 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="assets/sb admin/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/sb admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/sb admin/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/sb admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="assets/sb admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../assets/sb admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="assets/js/sb admin/sb-admin-2.min.js"></script>
+    <script src="../assets/js/sb admin/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="assets/sb admin/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/sb admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/sb admin/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../assets/sb admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="assets/js/sb admin//demo/datatables-demo.js"></script>
+    <script src="../assets/js/sb admin//demo/datatables-demo.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="../assets/js/lightbox/lightbox.js"></script>
 
 </body>
 
