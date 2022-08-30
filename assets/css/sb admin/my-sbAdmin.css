@@ -25,3 +25,17 @@ a:hover {
 .foto-card .card-body a:hover > img {
   transform: scale(0.9);
 }
+
+/* Admin - Upload Gambar Container */
+.container-upload {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Media Query Smartphone */
+@media only screen and (max-width: 767px) {
+  .bi {
+    font-size: 12px;
+  }
+}
