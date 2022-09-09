@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Team Wisnu - Detail Progress Proyek</title>
+    <title>Team Wisnu - Profile</title>
 
     <!-- Custom fonts for this template -->
     <link href="../assets/sb admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -28,10 +28,6 @@
 
     <!-- My SB Admin CSS -->
     <link rel="stylesheet" href="../assets/css/sb admin/my-sbAdmin.css">
-
-    <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="../assets/css/lightbox/lightbox.css">
-
 </head>
 
 <body id="page-top">
@@ -207,127 +203,36 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Detail Progress Proyek</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Profile</h1>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <!-- Detail Progress Card -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Detail Proyek</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="form-group">
-                                                    <label for="detailPemilik">Pemilik</label>
-                                                    <input type="text" class="form-control" id="detailPemilik"
-                                                        aria-describedby="detailPemilik" value="Rudi Salim" readonly>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="detailnamaProyek">Nama Proyek</label>
-                                                    <input type="text" class="form-control" id="detailnamaProyek"
-                                                        value="Rumah Mahal" readonly>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="detailTanggalMulai">Tanggal Mulai</label>
-                                                    <input type="date" class="form-control" id="detailTanggalMulai"
-                                                        value="2022-03-12" readonly>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="detailTanggalSelesai">Tanggal Selesai</label>
-                                                    <input type="date" class="form-control" id="detailTanggalSelesai"
-                                                        value="2024-03-12" readonly>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-6">
-                                                <div class="form-group">
-                                                    <label for="detailnamaPengawas">Nama Pengawas</label>
-                                                    <input type="text" class="form-control" id="detailnamaPengawas"
-                                                        value="Pak Tesa" readonly>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="detailAlamat">Alamat</label>
-                                                    <textarea class="form-control" name="detailAlamat" id="detailAlamat"
-                                                        cols="30" rows="5" readonly>Jl. Wiyung Gg.1 Surabaya</textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <!-- Akhir Form -->
-                                </div>
+                    <form>
+                        <div class="form-group">
+                            <div class="foto-profile d-flex flex-column justify-content-center align-items-center">
+                                <img class="img-profile rounded-circle mb-3" src="../img/undraw_profile.svg" width="150"
+                                    height="150">
+                                <h5>Super Admin</h5>
                             </div>
+                            <label for="exampleFormControlFile1">Ubah Foto</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailProfile">Email address</label>
+                            <input type="email" class="form-control" id="emailProfile" aria-describedby="emailProfile"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordProfile">Password</label>
+                            <input type="password" class="form-control" id="passwordProfile">
+                        </div>
+                        <div class="form-group">
+                            <label for="telProfile">No Telepon</label>
+                            <input type="tel" class="form-control" id="telProfile" aria-describedby="telProfile">
                         </div>
 
-                        <div class="col-xl-6">
-                            <!-- Detail RAB Card -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Rancang Anggaran Bangun</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="detailRABTot">Total RAB</label>
-                                            <input type="text" class="form-control" id="detailRABTot"
-                                                aria-describedby="detailRABTot" value="5.000.000" readonly>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="detailRABTerbayar">Sudah Terbayar</label>
-                                            <input type="text" class="form-control" id="detailRABTerbayar"
-                                                value="3.000.000" readonly>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="detailRABKurang">Belum Terbayar</label>
-                                            <input type="text" class="form-control" id="detailRABKurang"
-                                                value="2.000.000" readonly>
-                                        </div>
-                                    </form>
-                                    <!-- Akhir Form -->
-                                </div>
-                            </div>
-                            <a href="" class="btn btn-danger mb-4">Selesai Proyek</a>
-                        </div>
-
-                        <div class="col-xl-12">
-                            <!-- Foto Proyek Card -->
-                            <div class="card shadow mb-4 foto-card">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Foto Proyek</h6>
-                                </div>
-                                <div class="card-body">
-                                    <a href="../assets/img/portofolio 1.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 1.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                    <a href="../assets/img/portofolio 2.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 2.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                    <a href="../assets/img/portofolio 4.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 4.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                    <a href="../assets/img/portofolio 5.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 5.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                    <a href="../assets/img/portofolio 6.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 6.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                    <a href="../assets/img/portofolio 4.jpg" data-lightbox="roadtrip">
-                                        <img class="mb-3" src="../assets/img/portofolio 4.jpg" width="100" height="100"
-                                            alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                        <a href="suIndex.html" class="btn btn-outline-danger mb-4">Batal</a>
+                        <button type="submit" class="btn btn-primary mb-4">Simpan</button>
+                    </form>
 
 
                 </div>
@@ -371,7 +276,7 @@
                 <div class="modal-body">Yakin ingin keluar?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="index.html">Logout</a>
+                    <a class="btn btn-primary" href="../index.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -393,9 +298,6 @@
 
     <!-- Page level custom scripts -->
     <script src="../assets/js/sb admin//demo/datatables-demo.js"></script>
-
-    <!-- Lightbox JS -->
-    <script src="../assets/js/lightbox/lightbox.js"></script>
 
 </body>
 
