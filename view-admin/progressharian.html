@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Team Wisnu - RAB</title>
+    <title>Team Wisnu - Progress Harian Proyek</title>
 
     <!-- Custom fonts for this template -->
     <link href="../assets/sb admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
         <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="clientIndex.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admIndex.html">
                 <div class="sidebar-brand-icon">
                     <img src="../assets/img/Logo.png" width="40" height="40" alt="">
                 </div>
@@ -51,7 +51,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="clientIndex.html">
+                <a class="nav-link" href="admIndex.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -66,24 +66,9 @@
 
             <!-- Nav Item - Proyek -->
             <li class="nav-item">
-                <a class="nav-link" href="proyekpage.html">
+                <a class="nav-link" href="proyekPage.html">
                     <i class="bi bi-list-task"></i>
                     <span>Proyek</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Pembayaran
-            </div>
-
-            <!-- Nav Item - RAB -->
-            <li class="nav-item">
-                <a class="nav-link" href="rabpage.html">
-                    <i class="bi bi-credit-card-2-back"></i>
-                    <span>RAB - Rancang Anggaran Belanja</span></a>
             </li>
 
             <!-- Divider -->
@@ -160,7 +145,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Wisnu</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -188,140 +173,66 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">RAB - Rancang Anggaran Biaya</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Proyek</h1>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-5">
-                            <!-- Rincian RAB Card -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Rincian RAB</h6>
+                    <!-- Proyek Tabel -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <div class="row">
+                                <div class="col d-flex justify-content-start align-items-center">
+                                    <h6 class="m-0 font-weight-bold text-primary">Daftar Progress Proyek</h6>
                                 </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <!-- Total Anggaran Card -->
-                                        <div class="col-xl-12 col-md-12 mb-4">
-                                            <div class="card border-left-primary shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                Total Anggaran
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 40,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-wallet2"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <!-- Sudah Terbayar Card -->
-                                        <div class="col-xl-12 col-md-6 mb-4">
-                                            <div class="card border-left-success shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                                Sudah Terbayar
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 15,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-cash-coin"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Biaya Kekurangan Card -->
-                                        <div class="col-xl-12 col-md-6 mb-4">
-                                            <div class="card border-left-warning shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                                Biaya Kekurangan
-                                                            </div>
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col-auto">
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                                        Rp 25,000</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-currency-dollar"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col d-flex justify-content-end">
+                                    <a href="tambahProgress.html" class="btn btn-primary"><i class="bi bi-plus-circle"
+                                            style="font-size: 12px;"></i> Tambah Data</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-xl-7">
-                            <!-- RAB Tabel -->
-                            <div class="card shadow mb-4">
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>Tanggal Bayar</th>
-                                                    <th>Nominal</th>
-                                                    <th>Keterangan</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>5.000.000</td>
-                                                    <td>Bayar dana tukang</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>2022/04/25</td>
-                                                    <td>1.500.000</td>
-                                                    <td>Bayar dana pengelasan besi</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>2015/04/25</td>
-                                                    <td>8.000.000</td>
-                                                    <td>Pengecatan Dinding Kamar Tidur</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Nama Progress</th>
+                                            <th>Tanggal Mulai</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Pemasangan Ubin Ruang Tamu</td>
+                                            <td>2017/04/25</td>
+                                            <td class="text-center">
+                                                <a href="editProgress.html" class="btn btn-warning">Edit</a>
+                                                <a href="detailProgress.html" class="btn btn-primary">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cat Tembok Garasi</td>
+                                            <td>2019/12/15</td>
+                                            <td class="text-center">
+                                                <a href="editProgress.html" class="btn btn-warning">Edit</a>
+                                                <a href="detailProgress.html" class="btn btn-primary">Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Pengecoran/Dek</td>
+                                            <td>2021/08/30</td>
+                                            <td class="text-center">
+                                                <a href="editProgress.html" class="btn btn-warning">Edit</a>
+                                                <a href="detailProgress.html" class="btn btn-primary">Details</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
