@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Team Wisnu - Dashboard</title>
+    <title>Team Wisnu - Daftar Proyek</title>
 
     <!-- Custom fonts for this template -->
     <link href="../assets/sb admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
         <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="suIndex.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admIndex.html">
                 <div class="sidebar-brand-icon">
                     <img src="../assets/img/Logo.png" width="40" height="40" alt="">
                 </div>
@@ -51,7 +51,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="suIndex.html">
+                <a class="nav-link" href="admIndex.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -66,54 +66,9 @@
 
             <!-- Nav Item - Proyek -->
             <li class="nav-item">
-                <a class="nav-link" href="proyekpage.html">
+                <a class="nav-link" href="proyekPage.html">
                     <i class="bi bi-list-task"></i>
                     <span>Proyek</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Bayar
-            </div>
-
-            <!-- Nav Item - Pembayaran -->
-            <li class="nav-item">
-                <a class="nav-link" href="pembayaranpage.html">
-                    <i class="bi bi-credit-card-2-back"></i>
-                    <span>Pembayaran</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Landing Page
-            </div>
-
-            <!-- Nav Item - Akun -->
-            <li class="nav-item">
-                <a class="nav-link" href="portofolioPage.html">
-                    <i class="bi bi-images"></i>
-                    <span>Portofolio</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Akun
-            </div>
-
-            <!-- Nav Item - Akun -->
-            <li class="nav-item">
-                <a class="nav-link" href="manajemenPengguna.html">
-                    <i class="bi bi-person-square"></i>
-                    <span>Manajemen Pengguna</span></a>
             </li>
 
             <!-- Divider -->
@@ -190,13 +145,13 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Super Admin</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profileSA.html">
+                                <a class="dropdown-item" href="profileAdmin.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -218,130 +173,49 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Daftar Proyek <span class="namaUser">Doddy/Lita/Bagong</span>
+                        </h1>
                     </div>
 
-                    <!-- Rincian RAB Card -->
-                    <div class="card shadow mb-4">
-                        <!-- Card Header - Accordion -->
-                        <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
-                            role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Jumlah Proyek dan Akun</h6>
-                        </a>
-                        <!-- Card Content - Collapse -->
-                        <div class="collapse show" id="collapseCardExample">
+                    <!-- Daftar Proyek -->
+                    <div class="tab-pane fade show active" id="nav-daftarProyek" role="tabpanel"
+                        aria-labelledby="nav-daftarProyek-tab">
+                        <!-- Proyek Tabel -->
+                        <div class="card shadow mb-4 gap-3">
                             <div class="card-body">
-                                <div class="row">
-
-                                    <!-- Jumlah Proyek Card -->
-                                    <div class="col-xl-4 col-md-12 mb-4">
-                                        <a href="proyekpage.html">
-                                            <div class="card border-left-primary shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                Jumlah Proyek</div>
-                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">31
-                                                                Proyek
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-collection"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Jumlah Pengawas Card -->
-                                    <div class="col-xl-4 col-md-6 mb-4">
-                                        <a href="manajemenPengguna.html">
-                                            <div class="card border-left-success shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                                Jumlah Pengawas</div>
-                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">35
-                                                                Pengawas
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-people-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Jumlah Client Card -->
-                                    <div class="col-xl-4 col-md-6 mb-4">
-                                        <a href="manajemenPengguna.html">
-                                            <div class="card border-left-warning shadow h-100 py-2 card-custom">
-                                                <div class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                                Jumlah Client</div>
-                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20
-                                                                Client
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i class="bi bi-person-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div> <!-- Akhir ROW -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Daftar Proyek Tabel -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Daftar Proyek</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTables" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>No.</th>
-                                            <th>Owner</th>
-                                            <th>Lokasi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Rudi Salim</td>
-                                            <td>Wiyung</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Bagong</td>
-                                            <td>Lidah Wetan</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Lita</td>
-                                            <td>Bambe</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="proyekpage.html" class="btn btn-danger">Show More...</a>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Nama Proyek</th>
+                                                <th>Tanggal</th>
+                                                <th>Lokasi</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Proyek 1</td>
+                                                <td>17/07/2022</td>
+                                                <td>Wiyung</td>
+                                                <td class="text-center">
+                                                    <a href="progressharian.html" class="btn btn-primary">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Proyek 2</td>
+                                                <td>11/09/2022</td>
+                                                <td>Waru Gunung</td>
+                                                <td class="text-center">
+                                                    <a href="progressharian.html" class="btn btn-primary">Detail</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
