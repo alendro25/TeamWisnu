@@ -311,6 +311,12 @@ footer {
     margin-top: 60px;
   }
 
+  .cd-words-wrapper b {
+    font-size: 40px !important;
+    line-height: 40px !important;
+    top: -100px !important;
+  }
+
   .about {
     padding: 80px 0 65px;
   }
