@@ -138,10 +138,10 @@ body {
   margin: 70px 0;
   padding: 70px;
   background-color: rgb(245, 241, 241);
-  width: 95vw;
   margin: auto;
-  border-radius: 25px;
   overflow: hidden;
+  /* width: 95vw; */
+  /* border-radius: 25px; */
 }
 
 .project h1 {
@@ -156,6 +156,7 @@ body {
 .contact {
   margin-top: 90px;
   padding: 70px;
+  overflow-x: hidden;
 }
 
 .contact .container h4 {
@@ -286,6 +287,10 @@ footer {
   }
   .jumbotron .container p {
     font-size: 14px;
+  }
+
+  .cd-words-wrapper b {
+    font-size: 60px !important;
   }
 
   .contact .container a {

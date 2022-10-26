@@ -1,3 +1,4 @@
+// Owl Carousel JS
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
@@ -27,6 +28,7 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+// Scroll to Top
 const scrollTop = document.querySelector(".scrollTop");
 
 window.addEventListener("scroll", () => {
@@ -35,4 +37,10 @@ window.addEventListener("scroll", () => {
   } else {
     scrollTop.classList.remove("active");
   }
+});
+
+// AOS JS
+AOS.init({
+  duration: 600,
+  once: true,
 });
