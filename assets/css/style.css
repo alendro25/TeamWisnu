@@ -51,6 +51,19 @@ body {
   color: rgb(141, 137, 137);
 }
 
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.point-head {
+  color: red;
+}
+
+.point-body {
+  text-align: justify;
+}
+
 .jumbotron {
   position: relative;
   /* background-image: url(/./assets/img/Jumbotron1.jpg); */
@@ -59,6 +72,7 @@ body {
   background-size: cover;
   height: 100vh;
   border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 .jumbotron::after {
   content: "";
@@ -89,6 +103,20 @@ body {
 }
 .jumbotron .container p {
   font-size: 16px;
+}
+
+.keunggulan {
+  margin: 200px auto;
+  padding: 70px;
+  background-color: rgb(245, 241, 241);
+  border-radius: 25px;
+  width: 95vw;
+}
+.keunggulan .container h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: "Prata", serif;
 }
 
 .about {

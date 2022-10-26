@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/img/Logo_2.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts -->
@@ -21,6 +22,13 @@
     <link rel="stylesheet" href="assets/css/owl carousel/owl.theme.default.min.css">
     <!-- Bootsrap Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="assets/css/hover css/hover.css">
+    <!-- Animated Headline CSS-->
+    <link rel="stylesheet" href="assets/css/animated headline/style.css">
+    <!-- AoS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -51,16 +59,31 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link hvr-underline-from-center" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link hvr-underline-from-center" href="#about">ABOUT</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#project">PROJECT</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#project" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROJECT
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kontraktor Rumah</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Kost</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Interior</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Gudang</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Ruko</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Gedung</a></li>
+                            <li><a class="dropdown-item" href="#">Kontraktor Developer</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
+                        <a class="nav-link hvr-underline-from-center" href="#contact">CONTACT</a>
                     </li>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -115,18 +138,124 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <div id="jumbotron" class="jumbotron p-5 mb-4 bg-light" style="background-image: url(assets/img/Jumbotron1.jpg);">
+    <div id="jumbotron" class="jumbotron p-5 mb-4 bg-light"
+        style="background-image: url(assets/img/Jumbotron-baru.jpg);">
         <div class="container py-5">
             <h1 class="display-5 fw-bold">Team Wisnu</h1>
-            <p class="col-md-8 fs-4"> Kami menawarkan dan menyediakan jasa kontraktor serta desain untuk pembangunan
-                rumah yang terencana.</p>
+            <p class="col-md-8 fs-4"> Kami menawarkan jasa kontraktor yang
+                <span class="cd-headline letters rotate-2">
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">TERPERCAYA</b>
+                        <b>BERKUALITAS</b>
+                        <b>BERGARANSI</b>
+                        <b>TERJANGKAU</b>
+                    </span>
+                </span>
+                <br>
+                Maka percayakan segala proyek impian anda pada <b>Team Wisnu</b>.
+            </p>
         </div>
     </div>
     <!-- Akhir Jumbotron -->
 
+    <!-- Keunggulan -->
+    <div id="keunggulan" class="keunggulan">
+        <div class="container text-center" data-aos="fade-down">
+            <h1>Kenapa Team Wisnu?</h1>
+            <p class="text-center mb-5">
+                Kepuasan anda adalah prioritas utama kami
+            </p>
+            <div class="row mx-3 my-3">
+                <!-- Point 1 -->
+                <div class="col-xl-4" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img class="icon" src="assets/img/icon/icon1.png" alt="">
+                        </div>
+                        <div class="col-xl-8">
+                            <h4 class="point-head">Gratis Survey</h3>
+                                <p class="point-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
+                                    vitae, ea
+                                    reprehenderit
+                                    modi fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="col-xl-4" data-aos="zoom-out" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img class="icon" src="assets/img/icon/icon2.png" alt="">
+                        </div>
+                        <div class="col-xl-8">
+                            <h4 class="point-head">Gratis Konsultasi</h3>
+                                <p class="point-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
+                                    vitae, ea
+                                    reprehenderit
+                                    modi fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="col-xl-4" data-aos="zoom-out" data-aos-duration="3000">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img class="icon" src="assets/img/icon/icon3.png" alt="">
+                        </div>
+                        <div class="col-xl-8">
+                            <h4 class="point-head">Gratis 3D Rendering</h3>
+                                <p class="point-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
+                                    vitae, ea
+                                    reprehenderit
+                                    modi fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mx-3 my-3">
+                <!-- Point 4 -->
+                <div class="col-xl-6" data-aos="zoom-out" data-aos-duration="4000">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img class="icon" src="assets/img/icon/icon4.png" alt="">
+                        </div>
+                        <div class="col-xl-8">
+                            <h4 class="point-head">Gratis Gambar Kerja</h3>
+                                <p class="point-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
+                                    vitae, ea
+                                    reprehenderit
+                                    modi fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="col-xl-6" data-aos="zoom-out" data-aos-duration="5000">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img class="icon" src="assets/img/icon/icon5.png" alt="">
+                        </div>
+                        <div class="col-xl-8">
+                            <h4 class="point-head">Gratis RAB</h3>
+                                <p class="point-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
+                                    vitae, ea
+                                    reprehenderit
+                                    modi fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Keunggulan -->
+
     <!-- About -->
     <div id="about" class="about">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <h1>About Us</h1>
 
             <div class="row">
@@ -151,7 +280,7 @@
 
     <!-- Project -->
     <div id="project" class="project">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-left">
             <h1>Project</h1>
             <p>Hasil dari project yang kami tangani</p>
 
@@ -283,8 +412,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/owl carousel/owl.carousel.min.js"></script>
+    <!-- Animated Headline JS -->
+    <script src="assets/js/animated headline/main.js"></script>
+    <script src="assets/js/animated headline/modernizr.js"></script>
     <!-- My JS -->
     <script src="assets/js/script.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true,
+        }
+        );
+    </script>
 
 </body>
 
