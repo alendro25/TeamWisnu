@@ -141,6 +141,7 @@ body {
   width: 95vw;
   margin: auto;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .project h1 {
