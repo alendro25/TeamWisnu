@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Wisnu - Kontraktor Rumah</title>
+    <link rel="shortcut icon" href="assets/img/Logo_2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl carousel/owl.theme.default.min.css">
+    <!-- Bootsrap Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="assets/css/hover css/hover.css">
+    <!-- Animated Headline CSS-->
+    <link rel="stylesheet" href="assets/css/animated headline/style.css">
+    <!-- AoS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- Floating WA -->
+    <a
+        href="https://api.whatsapp.com/send?phone=+6281333337329&text=Halo, Ada yang ingin Saya tanyakan. Mohon bantuannya">
+        <button class="btn-floating" target="_blank">
+            <img src="assets/img/WA.svg" alt="whatsapp">
+        </button>
+    </a>
+    <!-- Akhir Floating WA -->
+
+    <!-- Scroll to Top -->
+    <a href="#" id="scroll-top" class="scrollTop"><i class="bi bi-arrow-up-square"></i></a>
+    <!-- Akhir Scroll to Top -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/Logo_2.png" alt="" width="30" height="40">
+                Team Wisnu
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" aria-current="page" href="#">BERANDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" href="#about">TENTANG KAMI</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#project">PROJECT</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#project" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROJEK
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="kontraktor_rumah.html">Kontraktor Rumah</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_kost.html">Kontraktor Kost</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_interior.html">Kontraktor Interior</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_gudang.html">Kontraktor Gudang</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_ruko.html">Kontraktor Ruko</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_gedung.html">Kontraktor Gedung</a></li>
+                            <li><a class="dropdown-item" href="kontraktor_developer.html">Kontraktor Developer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" href="#contact">HUBUNGI KAMI</a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger mx-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        MASUK
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="assets/img/Logo_2.png" alt="logoTeamWisnu" width="30" height="40"
+                                        class="mx-2">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Team Wisnu - Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-warning" role="alert">
+                                        Email/password salah.
+                                    </div>
+                                    <form action="/adminIndex.html" method="post">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                aria-describedby="emailHelp" placeholder="xyz@gmail.com" required
+                                                autofocus>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="password" required>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        </div>
+                                        <!-- <button type="login" class="btn btn-danger">Login</button> -->
+                                        <a href="loginAdmin.html" class="btn btn-danger mx-2 my-2">Login
+                                            Admin</a>
+                                        <a href="view-client/clientIndex.html" class="btn btn-danger mx-2 my-2">Login
+                                            Client</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Akhir Modal -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div id="jumbotron" class="jumbotron p-5 mb-4 bg-light" style="background-image: url(assets/img/Jumbotron3.jpg);">
+        <div class="container py-5 text-center">
+            <h1 class="display-5 fw-bold">Kontraktor Rumah</h1>
+            <p class="col-xl-12 fs-4">Mari wujudkan rumah impian Anda dengan memilih <b>TEAMWISNU</b> Kontraktor dengan
+                desain yang good looking and eye catching dan hasil pekerjaan yang memuaskan</b>.
+            </p>
+        </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Konten Halaman Kontraktor -->
+    <div class="container kontraktor">
+        <div class="kontraktor-div" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+            <p>
+                Anda membuat keputusan yang penting untuk memilih kontraktor yang tepat. Kontraktor yang tepat akan
+                menjamin
+                rumah Anda dikerjakan dengan rapi, berkualitas, memiliki konstruksi yang kuat dan kokoh dengan tampilan
+                desain fasade yg elegan dan aesthetic secara keseluruhan. Rumah merupakan representasi dari karakter
+                pemiliknya, kami sangat memahami hal tersebut, dan akan memberikan yang terbaik.
+            </p>
+            <p>
+                TEAMWISNU Kontraktor memiliki tim arsitek internal dengan brand Wisnu Arsitek, adapun terlampir beberapa
+                desain bangunan yang pernah kami kerjakan berikut dengan foto real bangunan yang sudah finish 100%.
+                Banyak
+                dari para customer tertarik dengan desain 3D dari TEAMWISNU Kontraktor, karena desain-desain kami
+                dijamin
+                100% original, bukan copy paste dari google, social media, maupun pekerjaan tim arsitek atau kontraktor
+                lainnya. Jadi semua desain yang kami kerjakan terjamin tingkat ke-originalitasnya.
+            </p>
+
+            <b>
+                Dengan memilih kontraktor yang AMANAH dan TERPERCAYA, maka anda akan terhindar dari beberapa resiko yang
+                mungkin akan terjadi, diantaranya :
+            </b>
+
+            <ul>
+                <li>Kontraktor tidak mengerjakan sesuai spesifikasi yang disepakati</li>
+                <li>Kontraktor menaikan harga secara sepihak di tengah proses pengerjaan</li>
+                <li>Tenaga kerja kontraktor tidak tersedia, sehingga proyek tidak selesai tepat waktu</li>
+                <li>Kesalahan/ kegagalan konstruksi, sehingga bangunan retak atau miring</li>
+                <li>Waterproofing atau proses pemipaan yang kurang baik, sehingga bangunan mengalami kebocoran</li>
+                <li>dan Pemasangan jaringan listrik yang kurang bagus, sehingga mengakibatkan resiko terjadinya
+                    korsleting
+                    listrik</li>
+            </ul>
+
+            <p>
+
+                Pentingnya Konstruksi Rumah
+                Konstruksi sangat penting untuk menentukan durabilitas bangunan, bangunan tidak miring, bangunan tidak
+                retak, dan perhitungannya sesuai dengan jumlah lantai yang akan dibangun. TEAMWISNU Kontraktor terdiri
+                dari
+                tim arsitek dan teknik sipil yang professional dan berpengalaman di bidangnya yang bisa menyarankan
+                spesifikasi konstruksi yang sesuai (tidak berlebihan karena akan menambah beban cost), namun juga tidak
+                kurang (karena akan berdampak buruk bagi keamanan bangunan dan keselamatan penghuninya).
+            </p>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+            <h3 class=""> <b> Pentingnya Konstruksi Rumah </b> </h3>
+
+            <p>
+                Konstruksi sangat penting untuk menentukan durabilitas bangunan, bangunan tidak miring, bangunan tidak
+                retak, dan perhitungannya sesuai dengan jumlah lantai yang akan dibangun. TEAMWISNU Kontraktor terdiri
+                dari
+                tim arsitek dan teknik sipil yang professional dan berpengalaman di bidangnya yang bisa menyarankan
+                spesifikasi konstruksi yang sesuai (tidak berlebihan karena akan menambah beban cost), namun juga tidak
+                kurang (karena akan berdampak buruk bagi keamanan bangunan dan keselamatan penghuninya).
+            </p>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+
+
+            <div class="row">
+                <h3 class=""> <b> Fasade Bangunan </b></h3>
+                <div class="col-xl-6">
+                    <div class="gambar text-center">
+                        <img src="assets/img/kontraktor_rumah/img1.jpg" alt="" class="text-center" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <p>
+                        Bagian depan rumah sangat penting untuk citra rumah Anda secara keseluruhan. Bagian depan rumah
+                        meliputi :
+
+                    <ul>
+                        <li>Desain Fasade</li>
+                        <li>Pagar</li>
+                        <li>Carport</li>
+                        <li>Kanopi</li>
+                        <li>dan Landscape</li>
+                    </ul>
+
+                    TEAMWISNU Kontraktor akan menyarankan desain yang membuat rumah Anda sesuai dengan karakter Anda,
+                    sekaligus tampak elegan dan aesthetic secara keseluruhan. Dengan kata lain kami akan menyajikan
+                    desain
+                    bangunan anda dengan konsep SMART DESIGN.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="kontrakor-div" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+            <h3 class="mb-4"><b>Tata Ruang Denah Secara Keseluruhan</b></h3>
+            <div class="row text-center mb-5">
+                <div class="col-xl-6 col-md-6">
+                    <img src="assets/img/kontraktor_rumah/img3.jpg" alt="" style="height: 500px;">
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <img src="assets/img/kontraktor_rumah/img4.jpg" alt="" style="height: 500px;">
+                </div>
+            </div>
+            <p>
+                Tata ruang sangat penting untuk menjawab keperluan keluarga Anda, sesuai dengan pengarahan yang Anda
+                berikan terkait kebutuhan ruangan, sehingga akan tercipta denah dengan tata ruang yang ideal
+                menyesuaikan fungsi dan kebutuhan penghuninya. Kami akan menyarankan penataan ruang tamu, ruang
+                makan,
+                kamar tidur utama, kamar tidur anak, dapur, area servis , area bermain (apabila diperlukan), area
+                keluarga apabila diperlukan), area ruang kerja di rumah (apabila diperlukan).
+            </p>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+            <h3><b>Pembuatan Kamar Mandi</b></h3>
+
+            <p>
+                Pembuatan kamar mandi sangat ditentukan oleh waterproofing dan jaringan pipa yang bagus. Keunggulan
+                pengerjaan kamar mandi dari TEAMWISNU Kontraktor adalah sebagai berikut :
+
+            <ul>
+                <li>
+                    Waterproofing tiga lapis, untuk memastikan terhindar dari kebocoran
+                </li>
+                <li>
+                    Pemasangan jaringan dan sambungan pipa yang anti bocor
+                </li>
+                <li>
+                    Pemasangan keramik yang rapi dan presisi
+                </li>
+                <li>
+                    Pemakaian cat yang berkualitas dengan warna yang menarik
+                </li>
+                <li>
+                    Pemasangan washtafel dengan durabilitas yang baik
+                </li>
+                <li>
+                    Pemasangan closet yang tidak ada masalah dengan flash termasuk jaringan air secara keseluruhan
+                </li>
+            </ul>
+            </p>
+
+            <div class="row">
+                <div class="col-xl-6 col-md-6 d-flex justify-content-center align-items-center">
+                    <img class="" src="assets/img/kontraktor_rumah/img5.jpg" alt=""
+                        style="transform: rotate(90deg); height: 300px; width: fit-content;">
+                </div>
+                <div class="col-xl-6 col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="assets/img/kontraktor_rumah/img6.png" alt="" style="height: 500px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+            <h3><b>Pembuatan Kitchenset</b></h3>
+
+            <p>
+                TEAMWISNU Kontraktor akan membuatkan dapur terdiri dari cor beton dan granite tile, zinc serta kran air.
+                Untuk kabinet atas dan kabinet bawah adalah bagian dari pekerjaan interior. Dapur yang baik memiliki
+                saluran air yang anti bocor, dan saluran pembuangan yang tidak mudah tersumbat.
+            </p>
+
+            <div class="text-center">
+                <img src="assets/img/kontraktor_rumah/img7.png" alt="">
+            </div>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+            <h3><b>Pengerjaan Genteng & Pemasangan Lapisan Anti Panas </b></h3>
+            <p>
+                Konsultasikan jenis genteng yang sesuai dengan budget dan keperluan, jenis-jenis genteng sebagai berikut
+                :
+
+            <ul>
+                <li>
+                    Genteng Asbes
+                    <br>
+                    Genteng asbes secara harga sangat terjangkau, akan tetapi kurang direkomendasikan, karena selain
+                    selain durability kurang juga memiliki efek yang kurang baik terhadap indra penciuman.
+                </li>
+                <li>
+                    Genteng Kaca
+                    <br>
+                    Genteng kaca biasanya dipasangkan di beberapa titik, agar ruangan terasa lebih terang.
+                </li>
+                <li>
+                    Genteng Keramik
+                    <br>
+                    Genteng keramik memiliki bahan hampir sama seperti keramik lantai, akan tetapi ada tambahan lapisan
+                    mengkilat. Secara durabilitas dan estetika sangatlah recommended.
+                </li>
+                <li>
+                    Genteng Metal
+                    <br>
+                    Genteng Metal durabilitas yang bagus, akan tetapi tidak kedap suara ketika hujan deras.
+                </li>
+                <li>
+                    Genteng Tanah Liat
+                    <br>
+                    Genteng Tanah Liat secara harga terjangkau, tapi ada resiko lumut yang berdampak kerapuhan genteng.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="kontraktor-div" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+            <h3><b>Perjaan Lapisan Anti Panas</b></h3>
+            <p>
+                Ada beberapa alternatif pelapis anti panas, yaitu : alumunium foil, cellulose fiber, glasswool dan
+                polyurethane foam. Untuk mendiskusikan alternatif anti panas yang sesuai untuk rumah Anda, konsultasikan
+                dengan Account Manager TEAMWISNU Kontraktor
+            </p>
+
+            <h3><b>Batako, Bata Merah, dan Hebel</b></h3>
+            <p>
+                Material dinding batako umumnya dibuat dari campuran semen, pasir kasar yang dicetak padat atau dipress.
+                Selain itu ada juga yang membuatnya dari campuran batu tras, kapur dan air. Bahkan kini juga beredar
+                batako yang dibuat dari campuran semen, pasir dan batubara. Dengan bahan pembuatan seperti yang telah
+                disebutkan, batako memiliki kelemahan yaitu kekuatannya lebih rendah dari bata merah atau habel,
+                sehingga cenderung terjadi keretakan dinding, terutama jika bagian kosongnya tidak diisi dengan adukan.
+                Pemakaian material batako untuk dinding juga membuat dinding lebih hangat atau bahkan cenderung pengap
+                atau panas. Oleh karena itu di luar harganya yang murah, batako kurang kami rekomendasikan.
+                Material bata merah adalah bata yang dibuat dari tanah yang dicetak kemudian dibakar dengan suhu tinggi
+                sehingga menjadi kering, mengeras dan berwarna kemerah-merahan. Material ini cenderung tahan lama dan
+                jarang terjadi keretakan dinding yang dibangun dari bata merah.Kelebihan bata merah : ukuran lebih
+                kecil, memudahkan untuk pengangkutan, mudah untuk membentuk bidang yang kecil, harga lebih murah
+                dibanding habel, mudah mendapatkannya, perekatnya tidak perlu perekat khusus, sedangkan kekurangan bata
+                merah adalah : lebih sulit membuat pasangan bata yang rapi karena ukurannya kecil, menyerap panas pada
+                musim panas dan menyerap dingin pada musim dingin, sehingga kondisi ruangan tidak terlalu stabil, berat
+                sehingga menimbulkan beban pada struktur bangunan. Material bata merah cukup direkomendasikan.
+            </p>
+
+            <h3><b>Material Bata Ringan(Hebel)</b></h3>
+            <p>
+                Hebel dibuat dengan menggunakan mesin pabrik. Hebel cukup ringan, halus dan memiliki tingkat kerataan
+                yang baik. Hebel diciptakan agar dapat memperingan struktur dari sebuah bangunan konstruksi dan
+                mempercepat pelaksanaan. Kelebihan bata ringan : kualitas yang seragam sehingga menghasilkan dinding
+                yang rapi, lebih ringan dari bata biasa sehingga memperingan beban struktur, kedap air sehingga kecil
+                kemungkinan rembesan air, memiliki kekedapan terhadap suara yang baik, kuat terhadap tekanan yang tinggi
+                dan memiliki ketahanan yang baik terhadap gempa bumi. Kekurangan hebel adalah : perekatnya khusus yaitu
+                semen instan (harga lebih mahal), perlu keahlian khusus untuk memasangnya, harga lebih mahal
+                dibandingkan bata merah, tidak mudah didapatkan di toko material biasa (harus di toko material lebih
+                besar), pembelian harus dalam volume yang besar. Material hebel direkomendasikan untuk bangunan rumah
+                Anda.
+            </p>
+        </div>
+
+    </div>
+    <!-- Akhir Konten Halaman Kontraktor -->
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col" data-aos="fade-down" data-aos-duration="3000">
+                    <div class="foot-brand">
+                        <a href="#">
+                            <img src="assets/img/Logo.png" width="150px" height="150px" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 col-md-3" data-aos="fade-down" data-aos-duration="2000">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#project">Projek</a></li>
+                        <li><a href="#contact">Hubungi Kami</a></li>
+                        <li><a href="term_conds.html" target="_blank">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-3" data-aos="fade-down" data-aos-duration="1000">
+                    <h4>Alamat</h4>
+                    <p>Jl. Keramat I No.29, Wiyung, Kota Surabaya, Jawa Timur</p>
+                </div>
+
+                <div class="col-lg-5 col-sm-12 col-md-4" data-aos="fade-down" data-aos-duration="500">
+                    <h4>Hubungi Kami</h4>
+                    <a href="mailto:teamwisnu@gmail.com" class="link-mail"><i class="bi bi-envelope"></i>
+                        teamwisnu@gmail.com</a>
+                    <br>
+                    <a href="tel:0317520201" class="link-tel"><i class="bi bi-headset"></i> (031)7520201</a> <br>
+                    <a href="tel:0317520201" class="link-tel"><i class="bi bi-telephone"></i> +62 8133-333-7329</a> <br>
+                    <a href="https://www.facebook.com/teamwisnu/?ref=page_internal" class="link-fb"><i
+                            class="bi bi-facebook"></i> Team
+                        Wisnu</a>
+                    <br><br>
+                    <p>Hari Operasional : Senin - Sabtu</p>
+                    <p>Jam Operasional : 09.00 - 16.00 </p>
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <p class="text-center text-light">&copy;2022 <a href="#" class="link-copyright"> CV. Team
+                Wisnu</a>. All Right
+            Reserved</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+
+
+
+
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/owl carousel/owl.carousel.min.js"></script>
+    <!-- Animated Headline JS -->
+    <script src="assets/js/animated headline/main.js"></script>
+    <script src="assets/js/animated headline/modernizr.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- My JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

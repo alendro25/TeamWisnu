@@ -64,6 +64,22 @@ body {
   text-align: justify;
 }
 
+.kontraktor {
+  overflow: hidden;
+}
+.kontraktor > * {
+  text-align: justify;
+}
+
+.kontraktor p {
+  text-indent: 20px;
+}
+
+.kontraktor-div {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
 .jumbotron {
   position: relative;
   /* background-image: url(/./assets/img/Jumbotron1.jpg); */
@@ -204,6 +220,9 @@ footer {
 .footer .container ul {
   list-style: none;
 }
+.footer .container ul > * {
+  margin-left: -30px;
+}
 .footer .container h4 {
   font-weight: 600;
   color: white;
@@ -266,6 +285,16 @@ footer {
   bottom: 90px;
 }
 /* Akhir Scroll to Top */
+
+/* CSS Hover */
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  background: rgb(54, 51, 51) !important;
+}
+.hvr-shutter-out-horizontal:before {
+  background: #807979 !important;
+}
+/* Akhir CSS Hover */
 
 /*--- Media Query ---*/
 @media only screen and (max-width: 1023px) {
