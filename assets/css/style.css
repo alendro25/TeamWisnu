@@ -16,6 +16,10 @@ body {
   z-index: 0;
 }
 
+.dropdown-item:active {
+  background-color: red;
+}
+
 .btn-black {
   background-color: #353535;
   color: white;
@@ -371,7 +375,7 @@ footer {
     padding: 75px 0;
   }
   .contact .container a {
-    width: 30%;
+    width: 50%;
     margin-bottom: 30px;
   }
 
