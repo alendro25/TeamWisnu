@@ -306,6 +306,13 @@ footer {
     margin-top: 30px;
   }
 
+  .cd-words-wrapper b {
+    font-size: 90px !important;
+  }
+  .next-capt {
+    margin-top: -300px !important;
+  }
+
   .project h1 {
     margin-bottom: 10px;
   }
@@ -324,7 +331,11 @@ footer {
   }
 
   .cd-words-wrapper b {
-    /* font-size: 60px !important; */
+    font-size: 70px;
+    margin: 0 !important;
+  }
+  .next-capt {
+    margin-top: -30px !important;
   }
 
   .contact .container a {
@@ -352,8 +363,10 @@ footer {
 
   .cd-words-wrapper b {
     font-size: 40px !important;
-    line-height: 40px !important;
-    top: -100px !important;
+    top: -230px !important;
+  }
+  .next-capt {
+    margin-top: -250px !important;
   }
 
   .about {
