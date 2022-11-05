@@ -57,7 +57,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class=" navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-center" aria-current="page" href="#">BERANDA</a>
                     </li>
@@ -72,69 +72,72 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             PROJEK
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="kontraktor_rumah.html">Kontraktor Rumah</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_kost.html">Kontraktor Kost</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_interior.html">Kontraktor Interior</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_gudang.html">Kontraktor Gudang</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_ruko.html">Kontraktor Ruko</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_gedung.html">Kontraktor Gedung</a></li>
-                            <li><a class="dropdown-item" href="kontraktor_developer.html">Kontraktor Developer</a></li>
-                        </ul>
+                        <ul class="dropdown-menu"">
+                            <li><a class=" dropdown-item" href="kontraktor_rumah.html">Kontraktor Rumah</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#contact">HUBUNGI KAMI</a>
-                    </li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger mx-2 my-1" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        MASUK
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <img src="assets/img/Logo_2.png" alt="logoTeamWisnu" width="30" height="40"
-                                        class="mx-2">
-                                    <h5 class="modal-title" id="exampleModalLabel"> Team Wisnu - Login</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                    <li><a class="dropdown-item" href="kontraktor_kost.html">Kontraktor Kost</a></li>
+                    <li><a class="dropdown-item" href="kontraktor_interior.html">Kontraktor Interior</a></li>
+                    <li><a class="dropdown-item" href="kontraktor_gudang.html">Kontraktor Gudang</a></li>
+                    <li><a class="dropdown-item" href="kontraktor_ruko.html">Kontraktor Ruko</a></li>
+                    <li><a class="dropdown-item" href="kontraktor_gedung.html">Kontraktor Gedung</a></li>
+                    <li><a class="dropdown-item" href="kontraktor_developer.html">Kontraktor Developer</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="testimonial.html">TESTIMONIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#contact">HUBUNGI KAMI</a>
+                </li>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger mx-2 my-1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    MASUK
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img src="assets/img/Logo_2.png" alt="logoTeamWisnu" width="30" height="40"
+                                    class="mx-2">
+                                <h5 class="modal-title" id="exampleModalLabel"> Team Wisnu - Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-warning" role="alert">
+                                    Email/password salah.
                                 </div>
-                                <div class="modal-body">
-                                    <div class="alert alert-warning" role="alert">
-                                        Email/password salah.
+                                <form action="/adminIndex.html" method="post">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                            placeholder="xyz@gmail.com" required autofocus>
                                     </div>
-                                    <form action="/adminIndex.html" method="post">
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="email"
-                                                aria-describedby="emailHelp" placeholder="xyz@gmail.com" required
-                                                autofocus>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="password"
-                                                placeholder="password" required>
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="rememberMe">
-                                            <label class="form-check-label" for="rememberMe">Remember me</label>
-                                        </div>
-                                        <!-- <button type="login" class="btn btn-danger">Login</button> -->
-                                        <a href="loginAdmin.html" class="btn btn-danger mx-2 my-2">Login
-                                            Admin</a>
-                                        <a href="view-client/clientIndex.html" class="btn btn-danger mx-2 my-2">Login
-                                            Client</a>
-                                    </form>
-                                </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="password"
+                                            required>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <!-- <button type="login" class="btn btn-danger">Login</button> -->
+                                    <a href="loginAdmin.html" class="btn btn-danger mx-2 my-2">Login
+                                        Admin</a>
+                                    <a href="view-client/clientIndex.html" class="btn btn-danger mx-2 my-2">Login
+                                        Client</a>
+                                </form>
                             </div>
                         </div>
-                        <!-- Akhir Modal -->
-                </ul>
+                    </div>
+                    <!-- Akhir Modal -->
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <!-- Akhir Navbar -->
 
@@ -364,11 +367,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-12 col-md-3" data-aos="fade-down" data-aos-duration="2000">
+                <div class="col-lg-3 col-sm-12 col-md-4" data-aos="fade-down" data-aos-duration="2000">
                     <h4>Perusahaan</h4>
                     <ul>
                         <li><a href="#about">Tentang Kami</a></li>
                         <li><a href="#project">Projek</a></li>
+                        <li><a href="testimonial.html">Testimonial</a></li>
                         <li><a href="#contact">Hubungi Kami</a></li>
                         <li><a href="term_conds.html" target="_blank">Syarat & Ketentuan</a></li>
                     </ul>
